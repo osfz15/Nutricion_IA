@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="manifest" href="manifest.json"> <metacharset="UTF-8">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>NutriVision AI</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="manifest" href="manifest.json">
@@ -15,11 +14,11 @@
             <p id="status-reminder">Próxima comida: Programando...</p>
         </header>
 
-        <!-- SECCIÓN DE CÁMARA ACTUALIZADA -->
+        <!-- SECCIÓN DE CÁMARA -->
         <section id="camera-section">
-            <video id="webcam" autoplay playsinline></video>
+            <!-- El atributo muted ayuda a que el autoplay funcione en Android -->
+            <video id="webcam" autoplay playsinline muted></video>
             
-            <!-- CAMPO DE DESCRIPCIÓN PARA MÁS PRECISIÓN -->
             <div style="padding: 10px; width: 90%;">
                 <input type="text" id="food-description" placeholder="Ejem: Es pollo con salsa, poca grasa..." 
                        style="width: 100%; padding: 12px; border-radius: 10px; border: none; background: #334155; color: white; margin-bottom: 10px;">
@@ -36,7 +35,7 @@
             <button id="save-btn">Guardar en Diario</button>
         </div>
 
-        <!-- CONFIGURACIÓN DE RECORDATORIO PUSH -->
+        <!-- CONFIGURACIÓN DE RECORDATORIO -->
         <section id="reminder-config" style="margin-top: 20px; background: #1e293b; padding: 15px; border-radius: 15px;">
             <h3 style="margin-top:0; font-size: 1rem;">⏰ Alarma de Comida</h3>
             <div style="display: flex; gap: 10px; align-items: center;">
@@ -48,7 +47,6 @@
             <p id="reminder-status" style="font-size: 0.75rem; margin-top: 10px; color: #94a3b8; margin-bottom:0;"></p>
         </section>
 
-        <!-- BARRA DE NAVEGACIÓN -->
         <nav class="tab-bar">
             <button class="nav-btn">🏠 Inicio</button>
             <button class="nav-btn">📊 Progreso</button>
@@ -56,6 +54,7 @@
         </nav>
     </div>
 
+    <!-- Asegúrate de que el archivo en GitHub se llame app.js en minúsculas -->
     <script src="app.js"></script>
 </body>
 </html>
