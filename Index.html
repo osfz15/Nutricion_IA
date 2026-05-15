@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GuateOSINT Pro</title>
+    <!-- Conexión con el diseño y el manifiesto -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Optimización para Android -->
+    <meta name="theme-color" content="#0f172a">
+    <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Guate<span>OSINT</span></h1>
+            <p>Unidad de Inteligencia Digital GT</p>
+        </header>
+
+        <div class="search-section">
+            <label for="main-input">Objetivo de Investigación:</label>
+            <input type="text" id="main-input" placeholder="DPI, NIT o Nombre completo..." autocomplete="off">
+            
+            <div class="button-group">
+                <button onclick="executeSearch()" id="btn-search">Investigar Ahora</button>
+            </div>
+        </div>
+
+        <div id="results-area">
+            <!-- Aquí aparecerá la magia de los datos -->
+            <div id="data-display"></div>
+        </div>
+
+        <footer>
+            <small>Fuentes: SAT, Guatecompras, OJ, Portales .gob.gt</small>
+        </footer>
+    </div>
+
+    <!-- El cerebro de la app -->
+    <script src="app.js"></script>
+</body>
+</html>

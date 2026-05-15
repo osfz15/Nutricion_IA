@@ -1,0 +1,19 @@
+{
+  "short_name": "GuateOSINT",
+  "name": "GuateOSINT Pro: Inteligencia de Datos",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1216/1216834.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#38bdf8",
+  "description": "Herramienta de investigación de fuentes abiertas para Guatemala.",
+  "orientation": "portrait"
+}
